@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+   <!--
+       From FCC on 1/3 - Here's the new approach
+       1. Separate each chart into a different index.js file. That will make it display properly. index-1, index-2, etc
+       2. Research webpack: I can use webpack to combine the index.js files into a single file that can render in one page load
+       3. Might shift to using React rather than D3.JS in order to serve things faster. So there's my entree into React
+   -->
+   
+   
+    <link rel="stylesheet" href="index.css">
+    <title>Student Evaluations: Fall, 2018 Semester</title>
+</head>
+<body>
+
+<h1>Student Evaluations: Fall, 2018 Semester</h1>
+<h2>Based on 11 responses submitted by a total of 24 students.</h2>
+<h3>Student Information</h3>
+<!--<h4>Before enrolling, my level of interest in the subject matter of this course was...</h4>-->
+    <div id='chart-one'>
+    <svg> </svg>
+    <script src="https://d3js.org/d3.v4.min.js"> </script>
+    <script src="chart1.js" type="text/javascript"> </script>
+    </div>
+<h4>My expected grade in this course is...</h4>
+    <div id ='chart-two'>
+    <svg> </svg>
+    <script src="https://d3js.org/d3.v4.min.js"> </script>
+    <script src="chart2.js" type="text/javascript"> </script>
+    </div>
+<h4>This course was: a) Required, or b) Elective.</h4>
+<h4>Weekly hours spent preparing for class and completing assignments.</h4>
+<h4>I came well prepared for class.</h4>
+<h3>Student Feedback on Professor</h3>
+</body>
+</html>
