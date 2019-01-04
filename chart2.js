@@ -23,11 +23,12 @@ const chart2 = [
 ]
 
 // Code for Chart Two
-/*Required Changes from chart1.js
+
+/*
+Required Changes from chart1.js
 svgContainer = #chart-two
 interest = grade
 data = chart2
-
 */
 
 const svg = d3.select('svg');
